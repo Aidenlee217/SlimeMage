@@ -1,0 +1,197 @@
+fileFormatVersion: 2
+guid: e413a5160be3697478be3588140080df
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: D_window1
+    100004: D_window2
+    100006: D_window3
+    100008: D_window4
+    100010: D_window5
+    100012: D_window6
+    100014: door_D
+    100016: doorhandle_D
+    100018: floor_st1_D
+    100020: roof
+    100022: sidewood1
+    100024: sidewood2
+    100026: stairs_D
+    100028: wood_D
+    100030: woodfordoor_D1
+    100032: woodfordoor_D2
+    400000: //RootNode
+    400002: D_window1
+    400004: D_window2
+    400006: D_window3
+    400008: D_window4
+    400010: D_window5
+    400012: D_window6
+    400014: door_D
+    400016: doorhandle_D
+    400018: floor_st1_D
+    400020: roof
+    400022: sidewood1
+    400024: sidewood2
+    400026: stairs_D
+    400028: wood_D
+    400030: woodfordoor_D1
+    400032: woodfordoor_D2
+    2100000: D_body
+    2100002: C_stairs_floor
+    2100004: D_door
+    2100006: C_handle
+    2100008: D_woods
+    2100010: facewindow_D
+    2100012: D_windows
+    2100014: D_roof
+    2300000: D_window1
+    2300002: D_window2
+    2300004: D_window3
+    2300006: D_window4
+    2300008: D_window5
+    2300010: D_window6
+    2300012: door_D
+    2300014: doorhandle_D
+    2300016: floor_st1_D
+    2300018: roof
+    2300020: sidewood1
+    2300022: sidewood2
+    2300024: stairs_D
+    2300026: wood_D
+    2300028: woodfordoor_D1
+    2300030: woodfordoor_D2
+    3300000: D_window1
+    3300002: D_window2
+    3300004: D_window3
+    3300006: D_window4
+    3300008: D_window5
+    3300010: D_window6
+    3300012: door_D
+    3300014: doorhandle_D
+    3300016: floor_st1_D
+    3300018: roof
+    3300020: sidewood1
+    3300022: sidewood2
+    3300024: stairs_D
+    3300026: wood_D
+    3300028: woodfordoor_D1
+    3300030: woodfordoor_D2
+    4300000: floor_st1_D
+    4300002: stairs_D
+    4300004: door_D
+    4300006: doorhandle_D
+    4300008: woodfordoor_D2
+    4300010: woodfordoor_D1
+    4300012: wood_D
+    4300014: D_window1
+    4300016: D_window2
+    4300018: D_window3
+    4300020: D_window4
+    4300022: D_window5
+    4300024: D_window6
+    4300026: roof
+    4300028: sidewood1
+    4300030: sidewood2
+    6400000: D_window1
+    6400002: D_window2
+    6400004: D_window3
+    6400006: D_window4
+    6400008: D_window5
+    6400010: D_window6
+    6400012: door_D
+    6400014: doorhandle_D
+    6400016: floor_st1_D
+    6400018: roof
+    6400020: sidewood1
+    6400022: sidewood2
+    6400024: stairs_D
+    6400026: wood_D
+    6400028: woodfordoor_D1
+    6400030: woodfordoor_D2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 35
+    meshCompression: 0
+    addColliders: 1
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

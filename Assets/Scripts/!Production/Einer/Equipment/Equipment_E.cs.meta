@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8c97b54f51f0e8141ad36e5eeef46ebb
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - icon: {instanceID: 0}
+  - PhysicalItem: {instanceID: 0}
+  - equipment: {instanceID: 0}
+  - RightArmSlot: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
