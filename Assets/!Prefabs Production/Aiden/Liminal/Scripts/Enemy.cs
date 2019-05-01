@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
     public RuntimeAnimatorController normal;
     public RuntimeAnimatorController glow;
 
+    public GameObject[] players;
     public GameObject Target;
     public float Score = 25;
 
@@ -28,7 +29,8 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         anim = gameObject.GetComponentInChildren<Animator>();
-        Target = GameObject.FindGameObjectWithTag("Player");
+        players = GameObject.FindGameObjectsWithTag("Player");
+        Target = players[Random.Range(0, players.Length)];
         gameObject.GetComponent<NavMeshAgent>().destination = Target.transform.position;
         Asource = gameObject.GetComponent<AudioSource>();
     }

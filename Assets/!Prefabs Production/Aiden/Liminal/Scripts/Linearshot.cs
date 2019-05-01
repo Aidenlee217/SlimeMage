@@ -9,7 +9,6 @@ public class Linearshot : MonoBehaviour
     public float lifetime;
     public bool singlehit = false;
     public bool mapclear = false;
-    public GameObject hit;
 
     // Update is called once per frame
     void Update()
@@ -40,7 +39,7 @@ public class Linearshot : MonoBehaviour
                 if (other.gameObject.tag == "Enemy")
                 {
                     other.gameObject.GetComponent<Enemy>().Death();
-                    Instantiate(hit, other.gameObject.transform);
+                    //Instantiate(hit, other.gameObject.transform);
                     other.gameObject.GetComponent<Collider>().enabled = false;
                 }
             }
@@ -60,7 +59,7 @@ public class Linearshot : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             collision.gameObject.GetComponent<Enemy>().Death();
-            Instantiate(hit, collision.gameObject.transform);
+            //Instantiate(hit, collision.gameObject.transform);
             collision.gameObject.GetComponent<Collider>().enabled = false;
             Destroy(gameObject);
         }

@@ -63,30 +63,30 @@ public class MagicSystem : MonoBehaviour
             }
             Change();
         }
-        if (OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick).x < -0.5f)
-        {
-            if (spellnum > 0.5f)
-            {
-                spellnum -= 1;
-            }
-            else
-            {
-                spellnum = Maxspell;
-            }
-            Change();
-        }
-        if (OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick).x > 0.5f)
-        {
-            if (spellnum < Maxspell - 0.5f)
-            {
-                spellnum += 1;
-            }
-            else
-            {
-                spellnum = 0;
-            }
-            Change();
-        }
+        //if (OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick).x < -0.5f)
+        //{
+        //    if (spellnum > 0.5f)
+        //    {
+        //        spellnum -= 1;
+        //    }
+        //    else
+        //    {
+        //        spellnum = Maxspell;
+        //    }
+        //    Change();
+        //}
+        //if (OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick).x > 0.5f)
+        //{
+        //    if (spellnum < Maxspell - 0.5f)
+        //    {
+        //        spellnum += 1;
+        //    }
+        //    else
+        //    {
+        //        spellnum = 0;
+        //    }
+        //    Change();
+        //}
         if ((backgroundtimer - savetimes[0]) < spellcooldown[0])
         {
             pictures[0].fillAmount = ((backgroundtimer - savetimes[0]) / spellcooldown[0]);
