@@ -31,7 +31,7 @@ public class MagicSystem : MonoBehaviour
         backgroundtimer += Time.deltaTime;
         if (OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger) > 0.5f)
         {
-            if (active[spellnum])
+            if (active[spellnum] == true)
             {
                 Instantiate(shotspells[spellnum], gameObject.transform.position, gameObject.transform.rotation);
                 savetimes[spellnum] = backgroundtimer;
@@ -66,7 +66,7 @@ public class MagicSystem : MonoBehaviour
         //*****Testing*****
         if (Input.GetButtonDown("Jump"))
         {
-            if (active[spellnum])
+            if (active[spellnum] == true)
             {
                 Instantiate(shotspells[spellnum], gameObject.transform.position, gameObject.transform.rotation);
                 savetimes[spellnum] = backgroundtimer;
@@ -109,7 +109,7 @@ public class MagicSystem : MonoBehaviour
         {
             pictures[0].fillAmount = ((backgroundtimer - savetimes[0]) / spellcooldown[0]);
         }
-        else
+        else if(Maxspell > 0)
         {
             active[0] = true;
         }
@@ -117,7 +117,7 @@ public class MagicSystem : MonoBehaviour
         {
             pictures[1].fillAmount = ((backgroundtimer - savetimes[1]) / spellcooldown[0]);
         }
-        else
+        else if(Maxspell > 1)
         {
             active[1] = true;
         }
@@ -125,7 +125,7 @@ public class MagicSystem : MonoBehaviour
         {
             pictures[2].fillAmount = ((backgroundtimer - savetimes[2]) / spellcooldown[0]);
         }
-        else
+        else if (Maxspell > 2)
         {
             active[2] = true;
         }
@@ -133,7 +133,7 @@ public class MagicSystem : MonoBehaviour
         {
             pictures[3].fillAmount = ((backgroundtimer - savetimes[3]) / spellcooldown[0]);
         }
-        else
+        else if (Maxspell > 3)
         {
             active[3] = true;
         }
@@ -141,7 +141,7 @@ public class MagicSystem : MonoBehaviour
         {
             pictures[4].fillAmount = ((backgroundtimer - savetimes[4]) / spellcooldown[0]);
         }
-        else
+        else if (Maxspell > 4)
         {
             active[4] = true;
         }
@@ -149,7 +149,7 @@ public class MagicSystem : MonoBehaviour
         {
             pictures[5].fillAmount = ((backgroundtimer - savetimes[5]) / spellcooldown[0]);
         }
-        else
+        else if (Maxspell > 5)
         {
             active[5] = true;
         }
@@ -157,7 +157,7 @@ public class MagicSystem : MonoBehaviour
 
     public void Change()
     {
-        for(int i = 0; i <= Maxspell; ++i)
+        for(int i = 0; i < Maxspell; ++i)
         {
             if (i != spellnum)
             {

@@ -69,6 +69,10 @@ public class Linearshot : MonoBehaviour
         }
         else
         {
+            if (hit != null)
+            {
+                Instantiate(hit, collision.gameObject.transform);
+            }
             Destroy(gameObject);
         }
     }
