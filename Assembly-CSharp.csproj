@@ -64,6 +64,7 @@
     <Compile Include="Assets\!Prefabs Production\Aiden\Liminal\Scripts\Despawner.cs" />
     <Compile Include="Assets\!Prefabs Production\Aiden\Liminal\Scripts\Destroyontrig.cs" />
     <Compile Include="Assets\!Prefabs Production\Aiden\Liminal\Scripts\Enemy.cs" />
+    <Compile Include="Assets\!Prefabs Production\Aiden\Liminal\Scripts\ExtraShots.cs" />
     <Compile Include="Assets\!Prefabs Production\Aiden\Liminal\Scripts\LimAnimations.cs" />
     <Compile Include="Assets\!Prefabs Production\Aiden\Liminal\Scripts\Linearshot.cs" />
     <Compile Include="Assets\!Prefabs Production\Aiden\Liminal\Scripts\MagicSystem.cs" />

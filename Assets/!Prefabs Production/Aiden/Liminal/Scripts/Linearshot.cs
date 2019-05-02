@@ -7,6 +7,7 @@ public class Linearshot : MonoBehaviour
     public float speed;
     public float timer;
     public float lifetime;
+    public GameObject hit;
     public bool singlehit = false;
     public bool mapclear = false;
 
@@ -59,7 +60,10 @@ public class Linearshot : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             collision.gameObject.GetComponent<Enemy>().Death();
-            //Instantiate(hit, collision.gameObject.transform);
+            if (hit != null)
+            {
+                Instantiate(hit, collision.gameObject.transform);
+            }
             collision.gameObject.GetComponent<Collider>().enabled = false;
             Destroy(gameObject);
         }

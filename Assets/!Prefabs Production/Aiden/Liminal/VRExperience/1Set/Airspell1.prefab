@@ -9544,9 +9544,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 015176f905e38084cb6cbf0765f98a5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 30
   timer: 0
   lifetime: 5
   singlehit: 1
   mapclear: 0
-  hit: {fileID: 714961737, guid: 4a2dbe1381868884987e7a490f85491b, type: 3}

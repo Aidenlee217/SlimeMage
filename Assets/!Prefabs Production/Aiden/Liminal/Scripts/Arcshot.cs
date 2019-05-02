@@ -26,7 +26,7 @@ public class Arcshot : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Instantiate(hit, gameObject.transform);
+        Instantiate(hit, gameObject.transform.position,Quaternion.identity);
         Destroy(gameObject);
     }
 }

@@ -8659,7 +8659,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Score: 0
   Stext: {fileID: 96694665}
-  Spellcontroller: {fileID: 239612579}
+  Spellcontroller: {fileID: 1543440307}
   spell1: 25
   s1: 0
   spell2: 500
@@ -20343,7 +20343,7 @@ PrefabInstance:
     - target: {fileID: 2563132829168224719, guid: 1c4fc1040ed22774493a714892805843,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.3750005
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2563132829168224719, guid: 1c4fc1040ed22774493a714892805843,
         type: 3}
@@ -34278,7 +34278,7 @@ MonoBehaviour:
   - {fileID: 1261798051}
   - {fileID: 1578410120}
   spellnum: 0
-  Maxspell: 0
+  Maxspell: 1
   spellcooldown:
   - 0.2
   - 3

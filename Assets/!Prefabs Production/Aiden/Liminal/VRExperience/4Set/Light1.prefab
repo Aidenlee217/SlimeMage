@@ -9476,9 +9476,9 @@ MonoBehaviour:
   speed: 20
   timer: 0
   lifetime: 5
-  singlehit: 0
+  hit: {fileID: 8675832653523721721, guid: 9cb0b89e0b4ffa14dbd1670766069e58, type: 3}
+  singlehit: 1
   mapclear: 0
-  hit: {fileID: 2067793283, guid: 0144454d24053374f9c173665e27bcc4, type: 3}
 --- !u!1 &1773103745
 GameObject:
   m_ObjectHideFlags: 0
