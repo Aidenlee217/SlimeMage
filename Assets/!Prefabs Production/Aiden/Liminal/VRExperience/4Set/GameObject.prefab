@@ -45,7 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Shot: {fileID: 1595716430, guid: eb1ffc36cf798b843a290b4c406f09e7, type: 3}
-  tempshot: {fileID: 0}
+  tempshot: {fileID: 8675832653523721721, guid: 9cb0b89e0b4ffa14dbd1670766069e58,
+    type: 3}
+  number: 0
+  total: 3
 --- !u!114 &8018397959388331196
 MonoBehaviour:
   m_ObjectHideFlags: 0

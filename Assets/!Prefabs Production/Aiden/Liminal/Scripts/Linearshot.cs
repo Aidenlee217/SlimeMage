@@ -62,7 +62,7 @@ public class Linearshot : MonoBehaviour
             collision.gameObject.GetComponent<Enemy>().Death();
             if (hit != null)
             {
-                Instantiate(hit, collision.gameObject.transform);
+                Instantiate(hit, gameObject.transform.position,Quaternion.identity);
             }
             collision.gameObject.GetComponent<Collider>().enabled = false;
             Destroy(gameObject);
@@ -71,7 +71,7 @@ public class Linearshot : MonoBehaviour
         {
             if (hit != null)
             {
-                Instantiate(hit, collision.gameObject.transform);
+                Instantiate(hit, gameObject.transform.position,Quaternion.identity);
             }
             Destroy(gameObject);
         }
