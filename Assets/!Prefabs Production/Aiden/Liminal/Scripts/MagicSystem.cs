@@ -29,7 +29,7 @@ public class MagicSystem : MonoBehaviour
         }
 
         backgroundtimer += Time.deltaTime;
-        if (OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger) > 0.5f)
+        if (OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger) >= 0.5f)
         {
             if (active[spellnum] == true)
             {
@@ -39,7 +39,7 @@ public class MagicSystem : MonoBehaviour
                 active[spellnum] = false;
             }
         }
-        if (OVRInput.Get(OVRInput.Button.DpadLeft))
+        if (OVRInput.Get(OVRInput.Button.DpadLeft) == true)
         {
             if (spellnum > 0.5f)
             {
@@ -51,7 +51,7 @@ public class MagicSystem : MonoBehaviour
             }
             Change();
         }
-        if (OVRInput.Get(OVRInput.Button.DpadRight))
+        if (OVRInput.Get(OVRInput.Button.DpadRight) == true)
         {
             if (spellnum < Maxspell-0.5f)
             {
@@ -64,22 +64,22 @@ public class MagicSystem : MonoBehaviour
             Change();
         }
         //*****Testing*****
-        if (Input.GetButtonDown("Jump"))
-        {
-            if (active[spellnum] == true)
-            {
-                Instantiate(shotspells[spellnum], gameObject.transform.position, gameObject.transform.rotation);
-                savetimes[spellnum] = backgroundtimer;
-                timer = 0;
-                active[spellnum] = false;
-            }
-            spellnum += 1;
-            if (spellnum >= Maxspell)
-            {
-                spellnum = 0;
-            }
-            Change();
-        }
+        //if (Input.GetButtonDown("Jump"))
+        //{
+        //    if (active[spellnum] == true)
+        //    {
+        //        Instantiate(shotspells[spellnum], gameObject.transform.position, gameObject.transform.rotation);
+        //        savetimes[spellnum] = backgroundtimer;
+        //        timer = 0;
+        //        active[spellnum] = false;
+        //    }
+        //    spellnum += 1;
+        //    if (spellnum >= Maxspell)
+        //    {
+        //        spellnum = 0;
+        //    }
+        //    Change();
+        //}
         //*****Testing*****
         //if (OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick).x < -0.5f)
         //{

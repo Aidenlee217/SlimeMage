@@ -1,0 +1,21 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Pop : MonoBehaviour {
+
+    public GameObject Smoke;
+    public GameObject Fireflies;
+    public GameObject Popaudio;
+    public GameObject Fireflyaudio;
+
+    public void Run()
+    {
+        gameObject.GetComponentInParent<Respawner>().Active = false;
+        Instantiate(Smoke, gameObject.transform.position, Quaternion.identity);
+        Instantiate(Fireflies, gameObject.transform.position, Quaternion.identity);
+        Instantiate(Popaudio, gameObject.transform.position, Quaternion.identity);
+        Instantiate(Fireflyaudio, gameObject.transform.position, Quaternion.identity);
+        Destroy(gameObject);
+    }
+}

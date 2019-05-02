@@ -1,0 +1,52 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Rings : MonoBehaviour {
+
+    public float Timer;
+    public float BreathRate = 6;
+    public float smallscale = 2;
+    public float largescale = 4;
+    public float scale;
+    public float scalebase;
+    public float multiplier;
+
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update () {
+        Timer += Time.deltaTime;
+        if (Timer >= BreathRate)
+        {
+            if (BreathRate <= 9.99f)
+            {
+                BreathRate += 0.5f;
+            }
+            if (BreathRate >= 10.01f)
+            {
+                BreathRate = 10;
+            }
+            Debug.Log(scale);
+            Timer = 0;
+            scale = scalebase;
+            //StartCoroutine(Breath());
+        }
+
+        if (Timer <= 0.3 * BreathRate)
+        {
+            scale += (largescale - smallscale) * Time.deltaTime * 0.7f*(1/BreathRate)*multiplier;
+        }
+
+        if (Timer >= 0.3 * BreathRate)
+        {
+            scale += (smallscale - largescale) * Time.deltaTime * 0.3f*(1/BreathRate)*multiplier;
+        }
+
+        transform.localScale = new Vector3(scale, 1, scale);
+	}
+    
+}

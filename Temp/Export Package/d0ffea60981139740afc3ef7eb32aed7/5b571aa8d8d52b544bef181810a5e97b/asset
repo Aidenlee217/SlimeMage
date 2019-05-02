@@ -1,0 +1,30 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Respawner : MonoBehaviour {
+
+    public GameObject fireflyjar;
+    public bool Active = true;
+    public float timer;
+    public float respawntime = 15;
+
+	// Use this for initialization
+	void Start () {
+		
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		if(Active == false)
+        {
+            timer += Time.deltaTime;
+            if (timer >= respawntime)
+            {
+                Instantiate(fireflyjar, gameObject.transform.position, gameObject.transform.rotation, gameObject.transform);
+                Active = true;
+                timer = 0;
+            }
+        }
+	}
+}
