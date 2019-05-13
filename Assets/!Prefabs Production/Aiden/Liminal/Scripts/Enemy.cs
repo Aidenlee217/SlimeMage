@@ -25,6 +25,9 @@ public class Enemy : MonoBehaviour
     public Material[] Normal;
     public Material[] Glow;
 
+    public GameObject temp;
+    public GameObject Deadblow;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,6 +62,8 @@ public class Enemy : MonoBehaviour
         gameObject.GetComponentInChildren<LimAnimations>().Updated();
         gameObject.GetComponent<NavMeshAgent>().speed = 0;
         gameObject.GetComponent<NavMeshAgent>().avoidancePriority = 1;
+        temp = Instantiate(Deadblow, gameObject.transform.position, Quaternion.identity);
+        temp.GetComponent<ParticleSystem>().startColor = gameObject.GetComponentInChildren<SkinnedMeshRenderer>().material.color;
         StartCoroutine(Remove());
     }
 
@@ -68,5 +73,11 @@ public class Enemy : MonoBehaviour
         yield return new WaitForSeconds(5);
         Destroy(parent);
         yield return true;
+    }
+
+    public void Delete()
+    {
+        GameObject.FindGameObjectWithTag("GM").GetComponent<ScoreSystem>().Score -= Score;
+        Destroy(parent);
     }
 }

@@ -8,7 +8,7 @@ public class Despawner : MonoBehaviour
     {
         if(other.gameObject.tag == "Enemy")
         {
-            Destroy(other.gameObject.GetComponent<Enemy>().parent);
+            other.gameObject.GetComponent<Enemy>().Delete();
         }
     }
 }

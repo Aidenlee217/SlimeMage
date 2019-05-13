@@ -292,6 +292,7 @@ MonoBehaviour:
   anim: {fileID: 799633008391791980}
   normal: {fileID: 9100000, guid: 7f775ce3856ede94a93b9eb83bd5f304, type: 2}
   glow: {fileID: 9100000, guid: 9260fc6504a8e04468d1ddc11d68c9d8, type: 2}
+  players: []
   Target: {fileID: 0}
   Score: 25
   Asource: {fileID: 7162029776171835396}
@@ -309,6 +310,9 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 8d0bd6fcb58d86a49b643fec71ee666b, type: 2}
   - {fileID: 2100000, guid: d8a8109af0bd29345893b0cbcf680b71, type: 2}
   - {fileID: 2100000, guid: 0b7d3ab3076b7f3409d563b553f9f05d, type: 2}
+  temp: {fileID: 0}
+  Deadblow: {fileID: 3014458263507957908, guid: 3be49344e89dbd1499451b6dd4f1e502,
+    type: 3}
 --- !u!1 &2090596484463326400
 GameObject:
   m_ObjectHideFlags: 0
