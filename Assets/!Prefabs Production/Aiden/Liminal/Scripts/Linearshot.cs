@@ -8,8 +8,14 @@ public class Linearshot : MonoBehaviour
     public float timer;
     public float lifetime;
     public GameObject hit;
+    public GameObject Cast;
     public bool singlehit = false;
     public bool mapclear = false;
+
+    void Start()
+    {
+        Instantiate(Cast, gameObject.transform.position, gameObject.transform.rotation);
+    }
 
     // Update is called once per frame
     void Update()

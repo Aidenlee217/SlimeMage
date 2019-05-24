@@ -9547,5 +9547,7 @@ MonoBehaviour:
   speed: 30
   timer: 0
   lifetime: 5
+  hit: {fileID: 0}
+  Cast: {fileID: 2733337539430832671, guid: 7f9a0b1441d0d654b92e36233e118b20, type: 3}
   singlehit: 1
   mapclear: 0

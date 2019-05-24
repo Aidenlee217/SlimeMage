@@ -221,6 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 1690961691, guid: 7409dca7ba530ba4f98b77ee90881dd9, type: 3}
+  Cast: {fileID: 5524773258979784012, guid: 4c9d6aa2a9c7836498118fc63766033e, type: 3}
   speed: 50
   timer: 0
   lifetime: 10

@@ -14153,6 +14153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 1650684127, guid: 728116fa09cb2ac40b26f4be53c2a6a2, type: 3}
+  Cast: {fileID: 5697411931296334804, guid: a0445e66c155ad744b947418d312076c, type: 3}
   speed: 50
   timer: 0
   lifetime: 10

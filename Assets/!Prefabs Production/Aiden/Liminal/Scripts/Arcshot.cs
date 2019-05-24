@@ -5,12 +5,14 @@ using UnityEngine;
 public class Arcshot : MonoBehaviour
 {
     public GameObject hit;
+    public GameObject Cast;
     public float speed;
     public float timer;
     public float lifetime;
 
     private void Start()
     {
+        Instantiate(Cast, gameObject.transform.position, gameObject.transform.rotation);
         gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * speed);
     }
 
